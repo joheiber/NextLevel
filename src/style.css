@@ -1,0 +1,90 @@
+:root {
+  --azul-marino: #1B263B;
+  --azul-marino-hover: #0F1A2A;
+  --verde-neon: #39FF14;
+  --verde-neon-hover: #27ec15; 
+  --gris-claro: #D3D3D3;
+  --gris-claro-hover: #BEBEBE; 
+  --blanco: #FFFFFF;
+  --negro: #000000;
+}
+
+body{
+  margin: 0;
+}
+
+#sidebar {
+  background-color: var(--azul-marino);
+  transition: width 0.3s;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar.collapsed {
+  width: 40px;
+}
+
+#sidebar.expanded {
+  width: 200px;
+}
+
+#tablero{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  padding: 0 1rem;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.menulink {
+  text-decoration: none;
+  display: block;
+  color: #343a40;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+.sidebar a:hover {
+  background-color: var(--azul-marino-hover);
+  border-radius: .5rem;
+}
+
+.sidebar .submenu {
+  padding-left: 15px;
+}
+
+.collapsedMenu {
+  display: none;
+}
+
+.menu {
+  transition: width 0.3s;
+}
+
+.submenu {
+  padding: 15px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  color: var(--blanco);
+}
