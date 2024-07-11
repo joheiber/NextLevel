@@ -63,19 +63,20 @@ button {
   border-radius: .5rem;
 }
 
-.sidebar .submenu {
+.sidebar .subMenu {
   padding-left: 15px;
 }
 
-.collapsedMenu {
+.collapsed {
   display: none;
 }
 
 .menu {
+  display: none;
   transition: width 0.3s;
 }
 
-.submenu {
+.subMenu {
   padding: 15px;
   transition: height 0.3s ease;
   overflow: hidden;
@@ -88,3 +89,4 @@ button {
 .sidebar a {
   color: var(--blanco);
 }
+
